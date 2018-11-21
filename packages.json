@@ -1,0 +1,163 @@
+{
+    "packageId": "a28135d74acf58",
+    "name": "",
+    "description": "",
+    "buttons": [
+        {
+            "buttonId": "a6826423d7f218",
+            "name": "INSPECTION",
+            "description": "",
+            "type": "action",
+            "questions": [
+                {
+                    "question": "Main entrance clean & tidy",
+                    "type": "options",
+                    "values": {
+                        "description": "",
+                        "options": [
+                            "yes",
+                            "no"
+                        ],
+                        "multiple": "single",
+                        "none": false
+                    },
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "62cee9b7c6b5c4",
+                    "number": 1
+                },
+                {
+                    "question": "What are the issues",
+                    "type": "freetext",
+                    "values": {
+                        "description": "",
+                        "format": "medium"
+                    },
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "16e7f4d7673e22",
+                    "number": 2
+                },
+                {
+                    "question": "Lift Clean and Operational",
+                    "type": "options",
+                    "values": {
+                        "description": "",
+                        "options": [
+                            "yes",
+                            "no"
+                        ],
+                        "multiple": "single",
+                        "none": false
+                    },
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "237d38d10f094c",
+                    "number": 3
+                },
+                {
+                    "question": "What are the issues",
+                    "type": "freetext",
+                    "values": {
+                        "description": "",
+                        "format": "medium"
+                    },
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "19e1e1a8edf2c3",
+                    "number": 4
+                },
+                {
+                    "question": "First Floor Lighting OK?",
+                    "type": "options",
+                    "values": {
+                        "description": "",
+                        "options": [
+                            "yes",
+                            "no"
+                        ],
+                        "multiple": "single",
+                        "none": false
+                    },
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "252b49e37773bc",
+                    "number": 5
+                }
+            ],
+            "navigation": {
+                "id": "62cee9b7c6b5c4",
+                "type": "node",
+                "parent": null,
+                "children": [
+                    {
+                        "id": "16e7f4d7673e22",
+                        "type": "node",
+                        "parent": "62cee9b7c6b5c4",
+                        "children": [
+                            {
+                                "id": "2c935d97e0caaa",
+                                "type": "subtree",
+                                "parent": null,
+                                "nodeid": "237d38d10f094c",
+                                "children": []
+                            }
+                        ],
+                        "rules": [
+                            {
+                                "type": "options",
+                                "values": [
+                                    "no"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "237d38d10f094c",
+                        "type": "node",
+                        "parent": "62cee9b7c6b5c4",
+                        "children": [
+                            {
+                                "id": "19e1e1a8edf2c3",
+                                "type": "node",
+                                "parent": "237d38d10f094c",
+                                "children": [],
+                                "rules": [
+                                    {
+                                        "type": "options",
+                                        "values": [
+                                            "no"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "252b49e37773bc",
+                                "type": "node",
+                                "parent": "237d38d10f094c",
+                                "children": [],
+                                "rules": [
+                                    {
+                                        "type": "options",
+                                        "values": [
+                                            "yes"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "rules": [
+                            {
+                                "type": "options",
+                                "values": [
+                                    "yes"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "webhooks": []
+        }
+    ]
+}
